@@ -1,0 +1,10 @@
+trigger:
+- master
+
+jobs:
+- job: init
+  pool: 
+    name: Default
+  steps:
+  - script: |
+      az --version
